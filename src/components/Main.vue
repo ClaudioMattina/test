@@ -4,14 +4,12 @@
       <div class="my-special-container">
 
 
-        <ElementOnMain />
+        <ElementOnMain v-for="(fumetto,index) in fumettis " :key="index"
+          :imgUrl="fumetto.thumb"
+          :serieTitle="fumetto.series" 
+        />
 
-        <!-- <div class="my-scheda">
-            <div class="img-scheda-container">
-              img
-            </div>
-            <h3>Subtitle</h3>
-        </div> -->
+        
   
       </div>
   </div>
@@ -33,7 +31,7 @@ export default {
   data: function(){
 
     return{
-      Fumettis:[
+      fumettis:[
               {
                 "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
                 "price": "$19.99",
@@ -131,21 +129,26 @@ export default {
           justify-content: center;
           align-items: center;
          
-
-
-            .my-scheda{
+          .my-scheda{
               width: calc(100% / 6);
               height: 150px;
               background-color: aqua;
               flex-direction: column;
               display: flex;
-              margin: 5px;
+              
 
               .img-scheda-container{
                 width: 100%;
                 height: 90%;
+
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
               }
             }
+
+           
 
         }
     }
