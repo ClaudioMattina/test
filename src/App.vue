@@ -3,6 +3,8 @@
   <div id="app">
     <HeaderComponent />
 
+    <Jumbotron />
+
     <Main />
 
     <IconesComponent />
@@ -15,6 +17,7 @@
 <script>
 
 import HeaderComponent from "./components/HeaderComponent.vue";
+import Jumbotron from "./components/Jumbotron.vue";
 import Main from "./components/Main.vue";
 import IconesComponent from "./components/IconesComponent.vue";
 import Footer from "./components/Footer.vue";
@@ -23,6 +26,7 @@ export default {
   name: "App",
   components: {
     HeaderComponent,
+    Jumbotron,
     Main,
     Footer,
     IconesComponent,

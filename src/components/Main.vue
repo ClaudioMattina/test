@@ -9,9 +9,12 @@
           :serieTitle="fumetto.series" 
         />
 
-        
-  
       </div>
+
+      <div id="my-btn">
+          <a href="#">LOAD MORE</a>
+      </div>
+
   </div>
 </template>
 
@@ -114,11 +117,31 @@ export default {
 <style lang="scss" scoped>
     #content-container{
         display: flex;
+        flex-direction: column;
         padding: 2rem;
         background-color: black;
         color: white;
         align-items: center;
-        margin-top: 3rem;
+        justify-content: center;
+
+        #my-btn{
+          
+          margin-top: 10px;
+          border: 2px solid rgb(4, 84, 189);
+          padding: 15px;
+          background-color: rgb(4, 84, 189);
+
+           &:hover{
+              opacity: .5;
+              cursor: pointer;
+            }
+
+          a{
+            text-decoration: none;
+            color: white;
+          }
+        }
+          
         
         
         .my-special-container{
