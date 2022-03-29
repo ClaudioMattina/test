@@ -119,6 +119,7 @@ export default {
         color: white;
         align-items: center;
         margin-top: 3rem;
+        height: 600px;
         
         .my-special-container{
           width: 70%;
@@ -126,30 +127,8 @@ export default {
           height: 100%;
           display: flex;
           flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-         
-          .my-scheda{
-              width: calc(100% / 6);
-              height: 150px;
-              background-color: aqua;
-              flex-direction: column;
-              display: flex;
-              
-
-              .img-scheda-container{
-                width: 100%;
-                height: 90%;
-
-                img{
-                  width: 100%;
-                  height: 100%;
-                }
-              }
-            }
-
-           
+          
+          }
 
         }
-    }
 </style>
