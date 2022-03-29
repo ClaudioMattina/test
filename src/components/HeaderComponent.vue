@@ -1,6 +1,7 @@
 <template>
 
-  <div class="Header-container">
+  
+    <div class="Header-container">
     <div id="logo">
       <img src="../assets/img/dc-logo.png" alt="">
     </div>
@@ -15,6 +16,9 @@
       </ul>
     </div>
   </div>
+  
+  
+
 </template>
 
 <script>
@@ -87,6 +91,8 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 70%;
+      margin: 0 auto;
 
          ul{
            display: flex;

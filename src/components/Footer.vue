@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div id="my-container">
       <div id="lists-footer-container">
 
           <div id="links-footer">
@@ -41,7 +41,9 @@
           </div>
           
       </div>
-      <div id="social-footer-container">
+
+      <div id="grey-container"> 
+          <div id="social-footer-container">
 
           <div>
                 <div id="my-btn">
@@ -67,7 +69,9 @@
                   <img src="../assets/img/footer-youtube.png" alt="">
               </div>
           </div>
+        </div>
       </div>
+      
   </div>
 </template>
 
@@ -219,8 +223,13 @@ export default {
 
 <style lang="scss" scoped>
 
-    #lists-footer-container{
+    #my-container{
         background-image: url("../assets/img/footer-bg.jpg");
+    }
+
+    #lists-footer-container{
+        width: 70%;
+        margin: 0 auto;
         height: 450px;
         display: flex;
         justify-content: space-between;
@@ -230,7 +239,7 @@ export default {
                 display: flex;
                 justify-content: center;
                 color: white;
-                width: 60%;
+                width: 50%;
                   
                     .link{
                         display: flex;
@@ -252,7 +261,7 @@ export default {
                                a{
                                    text-decoration: none;
                                    color: lightgrey;
-                                   font-size: 1.2rem;
+                                   font-size: 1rem;
                                    margin-bottom: .2rem;
                                    
 
@@ -269,9 +278,9 @@ export default {
 
             #bg-container{
 
-                width: 40%;
+                width: 50%;
                 height: 100%;
-                padding: 20px;
+                
 
                     #img-footer{
                     width: 100%;
@@ -283,7 +292,9 @@ export default {
                     }
             }        
     }
-
+    #grey-container{
+        background-color: rgb(145, 145, 145);
+    }
     #my-btn{
 
         border: solid 2px rgb(4, 84, 189);
@@ -296,7 +307,8 @@ export default {
     }
 
     #social-footer-container{
-        background-color: rgb(145, 145, 145);
+        width: 70%;
+        margin: 0 auto;
         height: 100px;
         display: flex;
         justify-content: space-between;

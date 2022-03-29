@@ -1,6 +1,7 @@
 <template>
 
-  <div id="icones-container">
+<div class="my-container">
+<div id="icones-container">
       <div class="icon">
           <img src="../assets/img/buy-comics-digital-comics.png" alt="">
           <h5>DIGITAL COMICS</h5>
@@ -23,6 +24,8 @@
       </div>
       
   </div>
+</div>
+  
 </template>
 
 <script>
@@ -34,11 +37,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+    .my-container{
+        background-color: rgb(4, 84, 189);
+    }
     #icones-container{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        background-color: rgb(4, 84, 189);
+        width: 70%;
+        margin: 0 auto;
         height: 150px;
 
         div{
