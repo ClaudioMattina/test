@@ -150,6 +150,8 @@ export default {
           height: 100%;
           display: flex;
           flex-wrap: wrap;
+          text-align: center;
+          justify-content: center;
           }
 
         }
